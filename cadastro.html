@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a href="index.html">Ir para Início</a>    
+    <form>
+
+        <label for="campo-nome">Nome do Drone:</label>
+        <input type="text" id="campo-nome" name="nome" placeholder="Digite o nome do drone.." required>
+
+        <label for="nro-serie">Número de Série</label>
+        <input type="text" minlength="8" id="nro-serie" name="serie" placeholder="Digite o número de série.." required>
+
+        <label for="campo-bateria">Autonomia de Bateria:</label>
+        <input type="number" max="120" id="campo-bateria" name="bateria" placeholder="Digite quantos minutos a bateria dura.." required>
+
+        <label for="setores">Setor: </label>
+        <select name="setores">
+            <option value="" disabled selected>Selecione..</option>
+            <option value="rapida">Entrega Rápida</option>
+            <option value="pesada">Pesada</option>
+            <option value="inspec">Inspeção</option>
+        </select> 
+
+        <input type="radio" name="estado" value="ativo">
+        <label for="ativo">Ativo</label>
+
+        <input type="radio" name="estado" value="manutenc">
+        <label for="manutenc">Em manutenção</label>
+
+        <label for="campo-senha">Senha do Operador:</label>
+        <input type="text" id="campo-senha" name="senha" placeholder="Digite a senha do operador.." required>
+
+        <button type="submit">Cadastrar Drone</button>
+    </form>  
 </body>
 </html>
