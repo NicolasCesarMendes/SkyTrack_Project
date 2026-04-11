@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
     background-position: center;
     height: 500;
     max-width: 1920;
-}
+} */
 
 /* body{
   font-family: Arial, sans-serif;
@@ -27,7 +27,7 @@ body {
 }
 */
 
-nav {
+/* nav {
     justify-content: space-between;
 }
 
@@ -42,7 +42,7 @@ nav {
     margin: 0 10px;
     font-weight: bold;
     transition: 0.3s;
-}
+} */
 
 /* nav a{
   color: #e2e8f0;
@@ -52,7 +52,7 @@ nav {
   transition: 0.3s;
 } */
 
-nav a:hover {
+/* nav a:hover {
     color: #38bdf8;
 }
 
@@ -108,7 +108,7 @@ nav a:hover {
 .sos:hover {
     background-color: #dc2626;
     transform: scale(1.05);
-}
+} */
 
 /* main {
   padding: 20px;
@@ -118,7 +118,7 @@ section {
   margin-bottom: 30px;
 } */
 
-.table-container {
+/* .table-container {
     overflow-x: auto;
 }
 
@@ -155,7 +155,7 @@ footer {
     padding: 20px;
     text-align: center;
     font-size: 14px;
-}
+} */
 
 /* @media (max-width: 768px) {
 
@@ -172,3 +172,227 @@ footer {
 
 } 
 */
+
+/* =======================
+   RESET
+======================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* =======================
+   BODY
+======================= */
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* =======================
+   LOGO
+======================= */
+.logo {
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+}
+
+/* =======================
+   NAVBAR (Flexbox OK)
+======================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1e293b;
+}
+
+nav li {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* =======================
+   MAIN
+======================= */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* =======================
+   TABELA
+======================= */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #334155;
+}
+
+tr:nth-child(even) {
+    background-color: #0f172a;
+}
+
+/* =======================
+   CARDS ALERTA (CORRIGIDO)
+======================= */
+.cardsdealerta {
+    display: flex;
+    flex-wrap: wrap; /* quebra linha */
+    gap: 20px;
+}
+
+.cardAlerta {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 250px;
+    min-width: 250px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.cardAlerta:hover {
+    opacity: 0.9;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* =======================
+   FORMULÁRIO (CADASTRO)
+======================= */
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: rgba(30, 41, 59, 0.95);
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+
+label {
+    font-size: 14px;
+}
+
+button {
+    background-color: #22c55e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #16a34a;
+}
+
+/* =======================
+   BOTÃO SOS
+======================= */
+.sos {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ef4444;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.sos:hover {
+    background-color: #dc2626;
+    transform: scale(1.05);
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    background-color: #1e293b;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* =======================
+   TRUNCATE
+======================= */
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* =======================
+   RESPONSIVO
+======================= */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardsdealerta {
+        flex-direction: column;
+    }
+
+}
