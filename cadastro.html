@@ -6,7 +6,8 @@
     <title>Cadastro de Drones</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="body-cadastro"> <a href="index.html" class="btn-voltar">Ir para o Início</a>
+<body class="body-cadastro"> 
+    <a href="index.html" class="btn-voltar">Ir para o Início</a>
 
     <form action="#" method="POST" class="form-drone">
         <h2>Cadastrar Drone</h2>
@@ -21,19 +22,19 @@
         <input type="number" max="120" id="campo-bateria" name="bateria" placeholder="Digite quantos minutos a bateria dura.." required>
 
         <label for="setores">Setor: </label>
-        <select name="setores">
+        <select name="setores" required>
             <option value="" disabled selected>Selecione..</option>
             <option value="rapida">Entrega Rápida</option>
             <option value="pesada">Pesada</option>
             <option value="inspec">Inspeção</option>
         </select> 
 
-        <div class="radio-group">
+        <div class="radio-grupo">
             <input type="radio" name="estado" value="ativo" id="ativo">
             <label for="ativo">Ativo</label>
         </div>
 
-        <div class="radio-group">
+        <div class="radio-grupo">
             <input type="radio" name="estado" value="manutenc" id="manutenc">
             <label for="manutenc">Em manutenção</label>
         </div>

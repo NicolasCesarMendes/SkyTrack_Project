@@ -1,181 +1,3 @@
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-.logo {
-    border-radius: 50%;
-    height: 90px;
-    max-width: 90px;
-}
-
-body {
-    background-image: url(../img/background.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 500;
-    max-width: 1920;
-} */
-
-/* body{
-  font-family: Arial, sans-serif;
-  background-color: #0f172a;
-  color: #e2e8f0;
-  line-height: 1.5;
-}
-*/
-
-/* nav {
-    justify-content: space-between;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: #1e293b;
-    color: #e2e8f0;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-    transition: 0.3s;
-} */
-
-/* nav a{
-  color: #e2e8f0;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-  transition: 0.3s;
-} */
-
-/* nav a:hover {
-    color: #38bdf8;
-}
-
-.resumodafrota {
-    background: linear-gradient(45deg, #22c55e, #4ade80);
-    color: #022c22;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    display: inline-block;
-}
-
-.cardsdealerta {
-
-    background-color: #1e293b;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1 1 250px;
-    min-width: 250px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-}
-
-.cardAlerta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.cardAlerta:hover {
-    opacity: 0.9;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-}
-
-.sos {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #ef4444;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 999;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-    transition: 0.3s;
-}
-
-.sos:hover {
-    background-color: #dc2626;
-    transform: scale(1.05);
-} */
-
-/* main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-} */
-
-/* .table-container {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #1e293b;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-th,
-td {
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #334155;
-}
-
-tr:nth-child(even) {
-    background-color: #0f172a;
-}
-
-.truncate {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-footer {
-    background-color: #1e293b;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-} */
-
-/* @media (max-width: 768px) {
-
-     NAV vira coluna
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-     Cards ocupam 100% 
-    .alertas {
-        flex-direction: column;
-    }
-
-} 
-*/
-
-/* =======================
-    RESET & BASE
-======================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -192,16 +14,13 @@ body {
     color: white;
 }
 
-/* Limita a largura do conteúdo na Dashboard */
 .container-central {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* =======================
-    HEADER & NAVBAR
-======================= */
+/* HEADER */
 nav {
     display: flex;
     justify-content: space-between;
@@ -232,13 +51,17 @@ nav a {
 
 nav a:hover { color: #38bdf8; }
 
-/* =======================
-    DASHBOARD (TABELAS)
-======================= */
-.table-container {
+/* SUBTITULO */
+
+.subtitulo{
+    margin: 15px 0 30px 0;
+}
+
+/* TABELA */
+.container-tabela {
     background-color: #1e293b;
     border-radius: 12px;
-    overflow: hidden;
+    overflow-x: auto;
     margin: 30px 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
@@ -250,7 +73,7 @@ table {
 
 th {
     background-color: #334155;
-    padding: 18px 20px; /* Espaçamento maior solicitado */
+    padding: 18px 20px;
     text-align: left;
     color: #38bdf8;
     font-size: 14px;
@@ -258,12 +81,12 @@ th {
 }
 
 td {
-    padding: 18px 20px; /* Espaçamento maior solicitado */
+    padding: 18px 20px;
     border-bottom: 1px solid #334155;
     font-size: 15px;
 }
 
-/* STATUS (CORES E BORDAS) */
+/* STATUS */
 .status-badge {
     padding: 6px 14px;
     border-radius: 20px;
@@ -271,32 +94,29 @@ td {
     font-weight: bold;
     display: inline-block;
     text-align: center;
-    min-width: 95px;
+    min-width: 95px;  
+    color: white;
 }
 
-.status-voo {
-    background-color: rgba(34, 197, 94, 0.15);
-    color: #4ade80;
-    border: 1px solid #22c55e;
+.status-online {
+    background: linear-gradient(90deg, #006525, #56ff94);
+    border: 1px solid #22c55e;  
 }
 
 .status-carga {
-    background-color: rgba(234, 179, 8, 0.15);
-    color: #facc15;
+    background: linear-gradient(90deg, #a16207, #facc15);
     border: 1px solid #eab308;
 }
 
-/* =======================
-    ALERTAS (COM HOVER)
-======================= */
-.cardsdealerta {
+/* ALERTAS */
+.cards-de-alerta {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 15px;
 }
 
-.cardAlerta {
+.card-alerta {
     background-color: #1e293b;
     padding: 20px;
     border-radius: 10px;
@@ -306,18 +126,28 @@ td {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-.cardAlerta:hover {
-    transform: translateY(-5px) scale(1.02); /* Aumento suave solicitado */
+.card-alerta:hover {
+    transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     background-color: #243147;
+    opacity: 0.9;
 }
 
-.cardAlerta h3 { color: #f8fafc; margin-bottom: 8px; }
-.cardAlerta p { color: #94a3b8; line-height: 1.5; }
+.card-alerta h3 
+{ 
+    color: #f8fafc; margin-bottom: 8px;     
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
 
-/* =======================
-    TELA DE CADASTRO
-======================= */
+.card-alerta p 
+{ 
+    color: #94a3b8; line-height: 1.5; 
+}
+
+/* TELA DE CADASTRO */
 .btn-voltar {
     display: inline-block;
     margin: 15px;
@@ -330,7 +160,10 @@ td {
     transition: 0.3s;
 }
 
-.btn-voltar:hover { background-color: #334155; }
+.btn-voltar:hover 
+{ 
+    background-color: #334155; 
+}
 
 .form-drone {
     max-width: 400px;
@@ -344,7 +177,10 @@ td {
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
-.form-drone label { font-size: 14px; margin-top: 5px; color: #cbd5e1; }
+.form-drone label 
+{ 
+    font-size: 14px; margin-top: 5px; color: #cbd5e1; 
+}
 
 .form-drone input, .form-drone select {
     padding: 12px;
@@ -354,7 +190,7 @@ td {
     font-size: 14px;
 }
 
-.radio-group {
+.radio-grupo {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -373,11 +209,12 @@ td {
     transition: 0.3s;
 }
 
-.btn-cadastrar:hover { background-color: #16a34a; }
+.btn-cadastrar:hover 
+{ 
+    background-color: #16a34a; 
+}
 
-/* =======================
-    BOTÃO SOS
-======================= */
+/* BOTÃO SOS */
 .sos {
     position: fixed;
     bottom: 25px;
@@ -395,11 +232,12 @@ td {
     transition: 0.3s;
 }
 
-.sos:hover { transform: scale(1.1); background-color: #dc2626; }
+.sos:hover 
+{ 
+    transform: scale(1.1); background-color: #dc2626; 
+}
 
-/* =======================
-    FOOTER
-======================= */
+/* FOOTER */
 footer {
     background-color: #0f172a;
     padding: 25px;
@@ -413,4 +251,12 @@ footer p, footer address {
     color: #94a3b8;
     font-style: normal;
     line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }    
 }
