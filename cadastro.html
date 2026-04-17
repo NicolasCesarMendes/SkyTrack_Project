@@ -6,10 +6,10 @@
     <title>Cadastro de Drones</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <a href="index.html">Ir para o Início</a>
+<body class="body-cadastro"> <a href="index.html" class="btn-voltar">Ir para o Início</a>
 
-    <form action="#" method="POST">
+    <form action="#" method="POST" class="form-drone">
+        <h2>Cadastrar Drone</h2>
 
         <label for="campo-nome">Nome do Drone:</label>
         <input type="text" id="campo-nome" name="nome" placeholder="Digite o nome do drone.." required>
@@ -28,16 +28,20 @@
             <option value="inspec">Inspeção</option>
         </select> 
 
-        <input type="radio" name="estado" value="ativo">
-        <label for="ativo">Ativo</label>
+        <div class="radio-group">
+            <input type="radio" name="estado" value="ativo" id="ativo">
+            <label for="ativo">Ativo</label>
+        </div>
 
-        <input type="radio" name="estado" value="manutenc">
-        <label for="manutenc">Em manutenção</label>
+        <div class="radio-group">
+            <input type="radio" name="estado" value="manutenc" id="manutenc">
+            <label for="manutenc">Em manutenção</label>
+        </div>
 
         <label for="campo-senha">Senha do Operador:</label>
         <input type="password" id="campo-senha" name="senha" placeholder="Digite a senha do operador.." required>
 
-        <button type="submit">Cadastrar Drone</button>
+        <button type="submit" class="btn-cadastrar">Cadastrar Drone</button>
     </form>  
 </body>
 </html>

@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkyTrack - Início</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <img class="logo" src="img/Logo de Rastreamento de Drones.png" alt="Logo da empresa">
-
             <li>
-                <ul>
-                    Dashboard
-                </ul>
-                <ul>
-                    <a href="cadastro.html">Cadastrar Drone</a>
-                </ul>
-                <ul>
-                    Relatórios
-                </ul>
+                <ul>Dashboard</ul>
+                <ul><a href="cadastro.html">Cadastrar Drone</a></ul>
+                <ul>Relatórios</ul>
             </li>
         </nav>
     </header>
+
     <main>
-        <section class="resumodafrota">
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Modelo</th>
-                    <th>Bateria</th>
-                    <th>Setor</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <th>#SK-01</th>
-                    <th>Hawk eye v2</th>
-                    <th>85%</th>
-                    <th>Entrega Rápida</th>
-                    <th>Em voo</th>
-                </tr>
-                <tr>
-                    <th>#SK-02</th>
-                    <th>Hawk eye v1</th>
-                    <th>50%</th>
-                    <th>Inspeção</th>
-                    <th>Em carga</th>
-                </tr>
-                <tr>
-                    <th>#SK-03</th>
-                    <th>valkyrie v10</th>
-                    <th>99%</th>
-                    <th>Combate</th>
-                    <th>Em voo</th>
-                </tr>
-            </table>
-        </section>
-        <section clas="cardsdealerta">
-            <article class="cardAlerta">
-                <p>Valkyrie v10 com defeito</p>
-                <p>Erro na identificação de intrusos</p>
-            </article>
-            <article class="cardAlerta">
-                <p>Hawk eye v1 com desempenho ruim</p>
-                <p>Revisar autonomia e eficiência em detecçaõ</p>
-            </article>
-        </section>
+        <div class="container-central">
+            <h1>Bem-vindo ao SkyTrack</h1>
+            <p class="subtitle">Gerencie sua frota de drones com eficiência e segurança.</p>
+
+            <section class="resumodafrota">
+                <h2>Resumo da Frota</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Modelo</th>
+                                <th>Bateria</th>
+                                <th>Setor</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#SK-01</td>
+                                <td>Hawk eye v2</td>
+                                <td>85%</td>
+                                <td>Entrega Rápida</td>
+                                <td><span class="status-badge status-voo">Em voo</span></td>
+                            </tr>
+                            <tr>
+                                <td>#SK-02</td>
+                                <td>Hawk eye v1</td>
+                                <td>50%</td>
+                                <td>Inspeção</td>
+                                <td><span class="status-badge status-carga">Em carga</span></td>
+                            </tr>
+                            <tr>
+                                <td>#SK-03</td>
+                                <td>valkyrie v10</td>
+                                <td>99%</td>
+                                <td>Combate</td>
+                                <td><span class="status-badge status-voo">Em voo</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="secao-alertas">
+                <h2>Alertas de Manutenção</h2>
+                <div class="cardsdealerta">
+                    <article class="cardAlerta">
+                        <h3>Valkyrie v10 com defeito</h3>
+                        <p>Erro na identificação de intrusos</p>
+                    </article>
+                    <article class="cardAlerta">
+                        <h3>Hawk eye v1 com desempenho ruim</h3>
+                        <p>Revisar autonomia e eficiência em detecção</p>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
+
     <footer>
         <p>&copy; 2026 SkyTrack</p>
         <address>contato@skytrack.com</address>
@@ -75,4 +88,5 @@
 
     <button class="sos">SOS</button>
 </body>
+
 </html>
