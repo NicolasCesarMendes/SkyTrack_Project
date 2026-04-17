@@ -34,7 +34,15 @@ Durante o desenvolvimento do projeto, alguns desafios foram enfrentados e resolv
 ```bash
 skytrack-logistics/
 │
+├── css/
+    │
+    ├── style.css
+├── img/
+    │
+    ├── background.png
+    ├── logo.png
+├── .gitattributes
+├── .gitignore
+├── cadastro.html
 ├── index.html
-├── style.css
-├── script.js
 └── README.md
